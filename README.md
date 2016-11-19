@@ -1,4 +1,4 @@
-Ce projet est traduit [en français ici](#Cahier-des-charges-pour-le-CSS-Zen-Garden)
+Ce projet est traduit [en français ici](#cahier-des-charges-pour-le-css-zen-garden)
 
 # Technical specifications for the CSS Zen Garden
 
