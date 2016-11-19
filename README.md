@@ -40,19 +40,19 @@ For this project I will look for higth resolution pictures with a Creative Comon
 Here are some designs that I appreciate and I use in this project.
 
 The concept of navigation page came of this site : http://24h.orientation.com/concept.html
-![Système de navigation intéressant sur 24heures de l'orientation](./Inspiration/24h.orientation.com-concept.html.png)
+![Système de navigation intéressant sur 24heures de l'orientation](./inspiration/24h.orientation.com-concept.html.png)
 
 This style of button, I find them nice came of this site : http://converteo.com/
-![Style de boutons que j'apprécie](./Inspiration/converteo.com.png)
+![Style de boutons que j'apprécie](./inspiration/converteo.com.png)
 
 If I don't make the big slider system, I can always make a smallest in this style of this site : http://www.liptonicetea.com/
-![Autre type de slider texte](./Inspiration/liptonicetea.com.png)
+![Autre type de slider texte](./inspiration/liptonicetea.com.png)
 
 I can make on my slider an label system as here, but I will make maybe a system 2x2 in desktop screen : http://www.chassepierre.be
-![Autre type de slider texte](./Inspiration/chassepierre.be-label.png)
+![Autre type de slider texte](./inspiration/chassepierre.be-label.png)
 
 On the same site, the hover button are so original with a border added.
-![Autre type de slider texte](./Inspiration/chassepierre.be-hover.png)
+![Autre type de slider texte](./inspiration/chassepierre.be-hover.png)
 
 ## TODO
 - [ ] Find some pictures free common for the project.
@@ -105,24 +105,24 @@ Je pense partir sur un slider géant, pure CSS bien entendu, avec des effets d'a
 
 Pour ce faire je vais chercher des images haute résolution libre de droit sous license Creative Comon.
 
-## Inspiration
+## inspiration
 
 Voici des design que j'apprécie et que je pense utiliser dans ce projet.
 
 L'idée de navigation me vient de cette page de ce site : http://24h.orientation.com/concept.html
-![Système de navigation intéressant sur 24heures de l'orientation](./Inspiration/24h.orientation.com-concept.html.png)
+![Système de navigation intéressant sur 24heures de l'orientation](./inspiration/24h.orientation.com-concept.html.png)
 
 Ces styles de bouton, je les trouve agréable, venant du site : http://converteo.com/
-![Style de boutons que j'apprécie](./Inspiration/converteo.com.png)
+![Style de boutons que j'apprécie](./inspiration/converteo.com.png)
 
 Si je ne fais pas mon système de grand slider, je peux toujours faire un plus petit dans le style de ce site : http://www.liptonicetea.com/
-![Autre type de slider texte](./Inspiration/liptonicetea.com.png)
+![Autre type de slider texte](./inspiration/liptonicetea.com.png)
 
 Je pourrais faire sur mon slider un système de vignette comme ici, mais je partirais peut être plutôt sur un système 2x2 en version écran de bureau : http://www.chassepierre.be
-![Autre type de slider texte](./Inspiration/chassepierre.be-label.png)
+![Autre type de slider texte](./inspiration/chassepierre.be-label.png)
 
 Sur le même site leur système de bouton hover est assez original avec un encadrement qui y est rajouté.
-![Autre type de slider texte](./Inspiration/chassepierre.be-hover.png)
+![Autre type de slider texte](./inspiration/chassepierre.be-hover.png)
 
 
 ## Liste de choses à faire
