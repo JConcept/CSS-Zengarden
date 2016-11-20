@@ -12,7 +12,7 @@ My work is here : http://hepl01.cblue.be/~user18/dw/css-zengarden
 ## Getting Started
 
 * Go to the `content` folder [here](./content)
-* See the css zen gaarden : [here](./content/assets/style.css)
+* See the css zen gaarden : [here](./content/style.css)
 
 ## Here are the submission guidelines for the new and improved csszengarden.com
 
@@ -84,7 +84,7 @@ C'est un __projet scolaire__ pour la [@hepl-web](https://github.com/hepl-web). C
 ## Débuter
 
 * Aller dans le dossier `content` : [ici](./content)
-* Regarder le code du CSS Zen Garden : [ici](./content/assets/style.css)
+* Regarder le code du CSS Zen Garden : [ici](./content/style.css)
 
 ## Voici les grandes directives pour la soumission du csszengarden.com
 - CSS3 ? Bien entendu ! Ne pas oublier de préfixer pour tous les navigateurs.
