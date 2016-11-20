@@ -1,0 +1,178 @@
+/* css Zen Garden submission XXX - 'NAME OF THEME', by JConcept, http://jconcept.be/  */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics Creative Commons License */
+
+/*      IMPORTANT
+*
+*   This design is not a template. You may not reproduce it elsewhere without the
+*   designer's written permission. However, feel free to study the CSS and use
+*   techniques you learn from it elsewhere.
+*
+*/
+
+/*
+******************************************************************************************
+*
+*       CSS ZEN GARDEN
+*
+*   A submission from JConcept in Belgium
+*   Project started at 2016/11/01
+*
+*   Design and development by Jean-Christophe LEPOT alias JConcept
+*
+*   http://www.jconcept.be/
+*
+*   CSS released under Creative Commons License:
+*   http://creativecommons.org/licenses/by-nc-sa/1.0/
+*
+*
+*         _   _____                                 _        _
+*        | | / ____| ___   _ __    ___  ___  _ __  | |_     | |__    ___
+*    _   | || |     / _ \ | '_ \  / __|/ _ \| '_ \ | __|    | '_ \  / _ \
+*   | |__| || |____| (_) || | | || (__|  __/| |_) || |_     | |_) ||  __/
+*   \____/  \_____|\___/ |_| |_| \___|\___|| .___/  \__| () |_.__/  \___|
+*                                          | |
+*                                          |_|
+*
+*
+*   See the original LESS files at https://github.com/JConcept/CSS-Zengarden
+*
+*
+*       CONTENT :
+*
+*   SVG graphics:
+*   - IMG.svg          XX KB
+*
+*   PNG graphics:
+*   - IMG.png          XX KB
+*
+*   CSS:
+*   - style.css        XX KB
+*   ________________________  XX KB (XX MB)
+*
+******************************************************************************************
+*/
+
+
+/*********/
+/* FONTS */
+/*********/
+@import url('https://fonts.googleapis.com/css?family=Hanalei|Indie+Flower|Quicksand:400,700');
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
+    src: url('./assets/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+            url('./assets/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'),
+            url('./assets/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'),
+            url('./assets/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'),
+            url('./assets/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+ /*
+ test-autoprefixer{
+     text-decoration-line: underline;
+     text-decoration-style: dotted;
+     text-decoration-color: red;
+     user-select: none;
+     transition: all .5s;
+     display: flex;
+     border-radius: 1px;
+     box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+     perspective: 1000px;
+ }
+ */
+
+
+/********/
+/* BASE */
+/********/
+h1,
+h2,
+h3,
+ul,
+p,
+a,
+abbr{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3{
+    font-weight: bolder;
+}
+h1,
+h2,
+h2 abbr{
+	color: #000000;
+    font-family: 'Hanalei', cursive;
+	font-size: 100px;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+h2,
+h2 abbr{
+	color: #000000;
+	font-size: 45px;
+	margin-top: 0;
+	margin-bottom: 10px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+h2::after{
+    content: ' by JConcept.be';
+    font-family: 'Indie Flower', cursive;
+	font-size: 25px;
+}
+h3{
+	color: #000000;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+ul{
+	color: #000000;
+	margin-left: 25px;
+}
+p{
+	color: #000000;
+	text-align: justify;
+	margin-bottom: 10px;
+    font-size: 16px;
+}
+a{
+	color: #000000;
+}
+strong, b{
+    color: red;
+	font-weight: bolder;
+}
+abbr{
+    font-style: italic;
+            text-decoration: underline dotted; /* Just supported by Firefox http://caniuse.com/#feat=text-decoration */
+    -webkit-text-decoration: underline dotted;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+/***********/
+/* CONTENT */
+/***********/
+
+/*********/
+/* ASIDE */
+/*********/
+
+/**********/
+/* FOOTER */
+/**********/

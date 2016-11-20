@@ -26,6 +26,8 @@ My work is here : http://hepl01.cblue.be/~user18/dw/css-zengarden
 ## Fonts used
 - `Font Awesome` : for the icons
 - `GOOGLE FONTS` : use for obtain right of Fonts
+- `Hanalei`      : for the h1 and h2 with Google Fonts
+- `Quicksand`    : for the text with Google Fonts
 
 ## Graphic univers
 
@@ -96,6 +98,8 @@ C'est un __projet scolaire__ pour la [@hepl-web](https://github.com/hepl-web). C
 ## Polices utilisées
 - `Font Awesome` : Utilisée pour les icones
 - `GOOGLE FONTS` : Justiliserai très certainement des polices Google Fonts dans ce projet pour avoir les droits d'utilisation.
+- `Hanalei`      : pour les titres h1 et h2 avec Google Fonts
+- `Quicksand`    : pour le texte avec Google Fonts
 
 ## Univers graphique
 
