@@ -31,9 +31,13 @@ My work is here : http://hepl01.cblue.be/~user18/dw/css-zengarden
 
 ## Colors used
 I have use Adobe Color CC online for create [my color pallet](https://color.adobe.com/fr/create/color-wheel/?base=2&rule=Monochromatic&selected=0&name=Mon%20th%C3%A8me%20Color&mode=rgb&rgbvalues=0.14901960784313728,0.2607843137255018,0.5,0.5980392156862746,0.7260379011940105,1,0.2980392156862745,0.5215686274509804,1,0.5781776239907728,0.6263359816486618,0.7294117647058823,0.23843137254901967,0.41725490196080295,0.8&swatchOrder=0,1,2,3,4). And I have used just 4 colors :
+
 1. the black : ![](./inspiration/color-black.png)
+
 2. the white : ![](./inspiration/color-white.png)
+
 3. the light blue : ![](./inspiration/color-light-blue.png)
+
 4. the pastel blue : ![](./inspiration/color-pastel-blue.png)
 
 ## Graphic univers
@@ -112,9 +116,13 @@ C'est un __projet scolaire__ pour la [@hepl-web](https://github.com/hepl-web). C
 
 ## Couleurs utilisées
 J'ai utilisé Adobe Color CC enligne pour créer [ma palette de couleurs](https://color.adobe.com/fr/create/color-wheel/?base=2&rule=Monochromatic&selected=0&name=Mon%20th%C3%A8me%20Color&mode=rgb&rgbvalues=0.14901960784313728,0.2607843137255018,0.5,0.5980392156862746,0.7260379011940105,1,0.2980392156862745,0.5215686274509804,1,0.5781776239907728,0.6263359816486618,0.7294117647058823,0.23843137254901967,0.41725490196080295,0.8&swatchOrder=0,1,2,3,4). And I have used just 4 colors :
+
 1. le noir : ![](./inspiration/color-black.png)
+
 2. le blanc : ![](./inspiration/color-white.png)
+
 3. le bleu clair : ![](./inspiration/color-light-blue.png)
+
 4. le bleu pastel : ![](./inspiration/color-pastel-blue.png)
 
 
