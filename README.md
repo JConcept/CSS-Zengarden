@@ -161,6 +161,9 @@ Sur le même site leur système de bouton hover est assez original avec un encad
 - [ ] Créer les animations et transitions pour rendre la page interactive.
 - [ ] Adapter la mise en page pour mobile (et écran en-dessous de 950px).
 - [ ] Créer une image d'arrière plan annimée ou un slider d'images d'arrière plan assez simple et automatique.
+- [ ] Justifier les textes à gauche.
+- [ ] Modifier le graphisme du menu de navigation en pied de page.
+- [ ] Améliorer le design.
 - [ ] Netoyer le fichier css.
 - [ ] Lancer autoprefixer voir [le cahier des charges de CSS Zengarden pour la soumission](#voici-les-grandes-directives-pour-la-soumission-du-csszengardencom).
 
@@ -173,6 +176,9 @@ Sur le même site leur système de bouton hover est assez original avec un encad
 
 ## Feedback (in french, sorry)
 ### First return of my teachers
->  On 2016/11/00 : first Feedback
+>  On 2016/11/23 : first Feedback
 
-- [ ] À venir...
+- [ ] Enlever la justification et favoriser l'alignement à gauche.
+- [ ] revoir le graphisme du menu de navigation
+- [ ] "Le style visuel initié par l’image de fond n’est pas du tout exploité dans la suite."
+- [ ] ...
