@@ -154,7 +154,7 @@ Sur le même site leur système de bouton hover est assez original avec un encad
 - [ ] Adapter la mise en page pour mobile (et écran en-dessous de 950px).
 - [ ] Créer une image d'arrière plan annimée ou un slider d'images d'arrière plan assez simple et automatique.
 - [ ] Netoyer le fichier css.
-- [ ] Lancer autoprefixer voir [le cahier des charges de CSS Zengarden pour la soumission](#voici-les-grandes-directives-pour-la-soumission-du-csszengarden.com).
+- [ ] Lancer autoprefixer voir [le cahier des charges de CSS Zengarden pour la soumission](#voici-les-grandes-directives-pour-la-soumission-du-csszengardencom).
 
 
 ------------------------------------
