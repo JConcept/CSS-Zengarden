@@ -1,6 +1,6 @@
-/* css Zen Garden submission XXX - 'NAME OF THEME', by JConcept, http://jconcept.be/  */
+/* css Zen Garden submission XXX - 'Paradise', by JConcept, http://jconcept.be/  */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* All associated graphics Creative Commons License */
+/* All associated graphics are on Creative Commons License and come of https://pixabay.com */
 
 /*      IMPORTANT
 *
@@ -10,8 +10,7 @@
 *
 */
 
-/*
-******************************************************************************************
+/*******************************************************************************************
 *
 *       CSS ZEN GARDEN
 *
@@ -41,17 +40,28 @@
 *       CONTENT :
 *
 *   SVG graphics:
-*   - IMG.svg          XX KB
+*   - NONE                           0 KB
 *
-*   PNG graphics:
-*   - IMG.png          XX KB
+*   JPG graphics:
+*   - paradise-1110498.jpg         834 KB
+*
+*   Fonts:
+*   - FontAwesome.otf             123 KB
+*   - fontawesome-webfont.eot      75 KB
+*   - fontawesome-webfont.svg     383 KB
+*   - fontawesome-webfont.ttf     150 KB
+*   - fontawesome-webfont.woff     89 KB
+*   - fontawesome-webfont.woff2    71 KB
 *
 *   CSS:
-*   - style.css        XX KB
-*   ________________________  XX KB (XX MB)
+*   - style.css                   12.8 KB
 *
-******************************************************************************************
-*/
+*   HTML:
+*   - index.html                    14 KB
+*   _____________________________________
+*   _____________________________________  
+*
+*******************************************************************************************/
 
 
 /*********/
@@ -83,6 +93,8 @@
      border-radius: 1px;
      box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
      perspective: 1000px;
+     background-size: cover;
+     hyphens: auto;
  }
  */
 
@@ -110,7 +122,7 @@ h3{
 h1,
 h2,
 h2 abbr{
-	color: #000000;
+	color: #FFFFFF;
     font-family: 'Hanalei', cursive;
 	font-size: 100px;
     margin: 0;
@@ -119,13 +131,14 @@ h2 abbr{
 }
 h2,
 h2 abbr{
-	color: #000000;
+	color: #FFFFFF;
 	font-size: 45px;
 	margin-top: 0;
 	margin-bottom: 10px;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
+    padding-bottom: 300px;
 }
 h2::after{
     content: ' by JConcept.be';
@@ -133,23 +146,28 @@ h2::after{
 	font-size: 25px;
 }
 h3{
-	color: #000000;
+	color: #FFFFFF;
 	font-size: 20px;
-	margin-top: 20px;
+	padding-top: 20px;
 	margin-bottom: 5px;
 }
 ul{
-	color: #000000;
+	color: #FFFFFF;
 	margin-left: 25px;
 }
 p{
-	color: #000000;
+	color: #FFFFFF;
 	text-align: justify;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
     font-size: 16px;
 }
 a{
-	color: #000000;
+	color: #4C85FF;
+    font-weight: bold;
+    font-style: italic;
+}
+a:hover{
+	color: #93A0BA;
 }
 strong, b{
     color: red;
@@ -161,18 +179,383 @@ abbr{
     -webkit-text-decoration: underline dotted;
 }
 
+/* Mouse highlighter effect */
+::-moz-selection { /* @bugfix Mozilla */
+        background: #93A0BA;
+        color: #FFFFFF;
+    }
+    ::selection {
+        background: #93A0BA;
+        color: #FFFFFF;
+    }
+
+
+/*********/
+/* FIXED */
+/*********/
+/* Footer (icons aside) */
+footer {
+    display: inline;
+    position: fixed;
+    top: 40%;
+    right: 0;
+    background-color: rgba(0,0,0,.5); /* @VARIANTE couleur rgba(38,66,127 */
+    padding: 3px;
+    border-radius: 0px 0 0 30px;
+    /border: grey solid 1px;
+    /border-right: none;
+    box-shadow: 20px 0 .8px rgba(250, 250, 250, 0.23),
+                0 0 20px rgba(0, 0, 0, 0.35);
+}
+footer a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    /text-indent: -100px;
+    /background-color: blue;
+    border-radius: 100%;
+    margin: 10px 10px;
+    color: transparent;
+}
+footer a:hover{
+    color: transparent;
+}
+footer a:first-child{
+    margin-top: 7px;
+    margin-bottom: 19px;
+}
+footer a::before{
+    color: white;
+    font-family: "FontAwesome";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    /text-align: center;
+}
+footer .zen-validate-html::before{
+    content: "\f13b";
+    font-size: 50px;
+}
+footer .zen-validate-css::before{
+    content: "\f13c";
+}
+footer .zen-license::before{
+    content: "\f25e";
+}
+footer .zen-accessibility::before{
+    content: "\f29a";
+}
+footer .zen-github::before{
+    content: "\f09b";
+    font-size: 44px;
+}
+footer a:hover::before{
+    color: #4C85FF;
+}
+/*
+
+    position: relative;
+    bottom: -50px;
+    color: red;
+
+
+footer .zen-license::before{
+font-family: "entypo";
+    content: "\e7a5";
+}
+footer .zen-accessibility::before{
+    content: "\e7a6";
+}
+footer .zen-github::before{
+    content: "\f301";
+}*/
+
+
 /**********/
 /* HEADER */
 /**********/
+html,
+body,
+.page-wrapper,
+.page-wrapper .intro,
+.page-wrapper .intro header{
+    height: 100%;
+    margin: 0;
+}
+html,
+body{
+    background: url("./assets/img/paradise-1110498.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+.page-wrapper .intro{
+    margin-bottom: 500px;
+    height: 100%;
+}
+header{
+    /display: block;
+    /position: relative;
+    /background: url("./assets/img/jetty-1373173.jpg") no-repeat center fixed;
+    /background-size: cover;
+}
+h1{
+    padding-top: 10%;
+}
+h1::after,
+h2::before{ /* Cette technique est elle acceptée ? */
+    display: block;
+    height: 0;
+    content: "A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.";
+    /display: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: transparent;
+    transition: height .5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+@keyframes font-color{
+    from {color: transparent;}
+    to {color: inherit;}
+}
+h1:hover::after,
+h2:hover::before{
+    /display: block;
+    height: 18px;
+    color: inherit;
+    animation-name: font-color;
+}
 
 /***********/
 /* CONTENT */
 /***********/
 
-/*********/
-/* ASIDE */
-/*********/
+/* Intro */
 
-/**********/
-/* FOOTER */
-/**********/
+.summary,
+.preamble{
+    /background-color: rgba(250,250,250,.5);
+    /display: inline-block;
+    /float: left;
+    /width: 50%;
+    /color: #000000;
+}
+
+.preamble{
+    width: 800px;
+    float: right;
+    padding: 20px;
+    padding-right: 66px; /* @ADD */
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px dotted white;
+    border-right: none;
+    margin-top: 66px;
+    margin-left: 10000px;
+}
+.preamble h3{
+    padding: 0;
+}
+.preamble p:last-child{
+    padding: 0;
+}
+.summary{
+    /position: absolute;
+    /top: 10%;
+    margin: 0 auto;
+    /width: 400px;
+    /height:96px;
+    padding: 20px;
+    padding-left: 66px; /* @ADD */
+    float: left;
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px dotted white;
+    border-left: none;
+}
+.summary p:first-child{
+    display: none;
+}
+.summary p{
+    padding: 0;
+    font-size: 20px;
+}
+
+/* Content of div #zen-supporting */
+.supporting,
+aside{
+    max-width: 1565px;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    padding: 0 66px; /* @ADD 66 => MODIFY : 20 */
+}
+@media screen and (min-width: 1715px) { /* For > HD screen *//* @ADD 1715 => MODIFY : 1622 */
+    .supporting,
+    aside{
+        border-left: 2px dotted white;
+        border-right: 2px dotted white;
+    }
+}
+.supporting{
+    position: relative;
+    /background: linear-gradient(transparent, #D1D1D1 30%, transparent 98%);
+    /padding-top: 290px;
+    /padding-bottom: 290px;
+    background-color: rgba(0, 0, 0, .9);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgb(0, 0, 0) 70%);
+    color: white;
+    /box-shadow: 0 -5px 10px rgba(0, 0, 0, .5);
+    border-top: 2px dotted white;
+        /display: flex; /* V1 avec flex */
+        /flex-direction: row;
+        /flex-wrap: wrap;
+        /justify-content: space-between;
+        /align-items: stretch;
+}
+.supporting div{
+    width: 30%; /* @ADD 66 => MODIFY : 20 */
+    max-width: 510px;
+}
+.supporting .explanation{
+    float: left; /* V2 sans flex */
+}
+.supporting .participation{
+    position: absolute;
+    /margin: 0 auto;
+    left: 35%;
+}
+.supporting .benefits{
+    float: right;
+}
+.supporting .requirements{
+    clear: both;
+    float: none;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.supporting .benefits p::before{
+    content: " " attr(assets/img/sand-465724.jpg);
+}
+
+/*******************/
+/* ASIDE -> FOOTER */
+/*******************/
+/* content */
+.design-selection{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.design-selection ul {
+    font-family: sans-serif;
+    width: 545px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    /background: rgba(38,66,127, .1);
+    border: 1px dashed rgba(250, 250, 250, .5);
+    border-radius: 5px;
+}
+.design-selection ul li:hover { /* si on veut supprimer le gris (fonc du tiroir), mais beug */
+}
+.design-selection ul li {
+    /* FOND du tiroir */
+    border-radius: 5px;
+    background: #bdc7d0; /* couleur de fond  @RE CHOIX */
+    background: linear-gradient(#CCD6DC, #ADB7C1);
+    /* LE RESTE */
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 30px;
+    height: 250px; /* hauteur tiroir */
+    margin-right: 5px;
+    list-style-ype: none;
+    text-align: right;
+    transition: width 1s ease 0.15s;
+    color: transparent; /* on supprime le by */
+}
+.design-selection ul li:last-child {
+    margin-right: 0px;
+}
+.design-selection ul li a:last-child::before{
+    content: "by "; /* on réinsère le by et on peut lui faire tout ce qu'on veut */
+    font-family: 'Indie Flower', cursive;
+}
+.design-selection ul li a{ /* CONTENU du tiroir */
+    color: #6F7A81; /* couleur police TIROIR */
+    font-size: 25px;
+    display: block;
+    transform: rotate(-15deg);
+    margin-top: 23px; /* règle la hauteur vertical TIROIR */
+    font-style: normal;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+.design-selection ul li a:first-child {
+    font-size: 16px; /* taille police bottonets */
+    position: absolute;
+    z-index: 20; /* @RE peut être un @bugfix pour le dernier*/
+    bottom: -30px;
+    left: 0px;
+    height: 24px; /* @REGLE largeur des battonets verticaux */
+    width: 225px; /* hauteur tiroir - a padding-rigth => 200 - 25 */
+    padding-right: 25px;
+    padding-top: 6px; /* @REGLE l'alignement horizontale de la police */
+    color: #FFFFFF; /* couleur de police des battonets */
+    text-decoration: none;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+    background: #353b42;
+    background: linear-gradient(to right, #21272B, #464D55);
+    transform-origin: 0px 0px;
+    transform: rotate(-90deg);
+}
+.design-selection ul li:hover {
+    width: 300px; /* @REGLE largeur tiroir */
+}
+.design-selection ul li:hover a:first-child {
+    text-shadow: none;
+    background: #4C85FF;
+}
+.design-selection ul li h3 { /* @re TITRE TIROIR */
+    font-size: 50px;
+    margin: 0;
+    padding-top: 25px;
+    text-shadow: 0px 1px 0px white;
+}
+
+/* real footer */
+.wrapper{
+    max-width: 567px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.wrapper li{
+    list-style-type: none;
+}
+.wrapper .design-archives li::before,
+.wrapper .zen-resources li::before{
+    position: relative;
+    left: -10px;
+    font-family: "FontAwesome";
+    content: "\f0a9";
+    color: #93A0BA;
+}
+.design-archives{
+    clear: both;
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+    vertical-align: top;
+}
+.zen-resources{
+    display: inline-block;
+    margin: 0 auto;
+    width: 49%;
+    vertical-align: top;
+}
+
+/********************************/
+/* SCREEN RESOLUTION ADAPTATION */
+/********************************/
+@media screen and (max-width: 950px){
+    /* @TODO attention 1000px for the h1::after and h2::before */
+}
