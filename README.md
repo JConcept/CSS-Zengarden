@@ -7,7 +7,7 @@ This is a __school project__ to [@hepl-web](https://github.com/hepl-web). He con
 
 The original website is here : http://www.csszengarden.com/
 
-My work is here : http://hepl01.cblue.be/~user18/dw/css-zengarden
+My work is here : http://hepl01.cblue.be/~user18/dw/csszg
 
 ## Getting Started
 
@@ -76,7 +76,7 @@ On the same site, the hover button are so original with a border added.
 ------------------------------------
 
 ## Release History
-* **2016/11/23 :** `v0.0.1` Pre-release of my project (this is a __BIG commit__)
+* **2016/11/23 :** `v0.0.1` Pre-release of my project
 * **2016/11/01 :** starting project
 
 ## Feedback (in french, sorry)
@@ -93,6 +93,11 @@ __Traduction__
 # Cahier des charges pour le CSS Zen Garden
 
 C'est un __projet scolaire__ pour la [@hepl-web](https://github.com/hepl-web). Ce projet consiste à éditer le __CSS__ sans toucher au html pour voir toutes les possibilités qu'ont à offrir le CSS.
+
+
+Le site web d'origine se trouve ici : http://www.csszengarden.com/
+
+Mon travail est hébergé ici : http://hepl01.cblue.be/~user18/dw/csszg
 
 ## Débuter
 
@@ -161,9 +166,6 @@ Sur le même site leur système de bouton hover est assez original avec un encad
 - [ ] Créer les animations et transitions pour rendre la page interactive.
 - [ ] Adapter la mise en page pour mobile (et écran en-dessous de 950px).
 - [ ] Créer une image d'arrière plan annimée ou un slider d'images d'arrière plan assez simple et automatique.
-- [ ] Justifier les textes à gauche.
-- [ ] Modifier le graphisme du menu de navigation en pied de page.
-- [ ] Améliorer le design.
 - [ ] Netoyer le fichier css.
 - [ ] Lancer autoprefixer voir [le cahier des charges de CSS Zengarden pour la soumission](#voici-les-grandes-directives-pour-la-soumission-du-csszengardencom).
 
@@ -171,14 +173,17 @@ Sur le même site leur système de bouton hover est assez original avec un encad
 ------------------------------------
 
 ## Historique des versions
-* **2016/11/23 :** `v0.0.1` Pré-version du projet (c'est une __GRANDE modification__)
+* **2016/12/XX :** `v0.0.2` Seconde pré-version du projet, améliorations suite au retour des enseignants.
+* **2016/11/23 :** `v0.0.1` Pré-version du projet
 * **2016/11/01 :** Début du projet
 
 ## Feedback (in french, sorry)
 ### First return of my teachers
->  On 2016/11/23 : first Feedback
+>  On 2016/11/23 : first feedback
 
-- [ ] Enlever la justification et favoriser l'alignement à gauche.
-- [ ] revoir le graphisme du menu de navigation
-- [ ] "Le style visuel initié par l’image de fond n’est pas du tout exploité dans la suite."
-- [ ] ...
+- [x] Enlever la justification et favoriser l'alignement à gauche.
+- [x] revoir le graphisme du menu de navigation
+- [x] "Le style visuel initié par l’image de fond n’est pas du tout exploité dans la suite."
+
+### Second return of my teachers
+>  On 2016/11/29 : second feedback

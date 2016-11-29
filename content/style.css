@@ -59,7 +59,7 @@
 *   HTML:
 *   - index.html                    14 KB
 *   _____________________________________
-*   _____________________________________  
+*   _____________________________________  XX KB (XX MB)
 *
 *******************************************************************************************/
 
@@ -128,6 +128,7 @@ h2 abbr{
     margin: 0;
     font-weight: 400;
     text-align: center;
+    text-shadow: 2px 1px 20px rgba(0, 0, 0, .2);
 }
 h2,
 h2 abbr{
@@ -148,8 +149,8 @@ h2::after{
 h3{
 	color: #FFFFFF;
 	font-size: 20px;
-	padding-top: 20px;
-	margin-bottom: 5px;
+	padding-top: 0px;
+	margin-bottom: 10px;
 }
 ul{
 	color: #FFFFFF;
@@ -157,9 +158,12 @@ ul{
 }
 p{
 	color: #FFFFFF;
-	text-align: justify;
 	padding-bottom: 10px;
     font-size: 16px;
+    line-height: 23px;
+}
+p:last-child {
+    padding: 0;
 }
 a{
 	color: #4C85FF;
@@ -308,22 +312,25 @@ h2::before{ /* Cette technique est elle acceptée ? */
     /display: none;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
+    text-shadow: 2px 1px 4px transparent;
     color: transparent;
     transition: height .5s;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
 }
 @keyframes font-color{
-    from {color: transparent;}
-    to {color: inherit;}
+    from {color: transparent; text-shadow: 2px 1px 4px transparent;}
+    to {color: inherit; text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);}
 }
 h1:hover::after,
 h2:hover::before{
     /display: block;
     height: 18px;
     color: inherit;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
     animation-name: font-color;
 }
+
 
 /***********/
 /* CONTENT */
@@ -341,6 +348,7 @@ h2:hover::before{
 }
 
 .preamble{
+    text-align: right;
     width: 800px;
     float: right;
     padding: 20px;
@@ -355,14 +363,14 @@ h2:hover::before{
     padding: 0;
 }
 .preamble p:last-child{
-    padding: 0;
+    /padding: 0; /* v0.0.1 */
 }
 .summary{
     /position: absolute;
     /top: 10%;
-    margin: 0 auto;
     /width: 400px;
     /height:96px;
+    margin: 0 auto;
     padding: 20px;
     padding-left: 66px; /* @ADD */
     float: left;
@@ -381,28 +389,29 @@ h2:hover::before{
 /* Content of div #zen-supporting */
 .supporting,
 aside{
-    max-width: 1565px;
+    /max-width: 1565px; /* v0.0.1 */
     margin: 0 auto;
-    background-color: rgb(0, 0, 0);
-    padding: 0 66px; /* @ADD 66 => MODIFY : 20 */
+    /background-color: rgb(0, 0, 0);
+    /padding: 0 66px; /* @ADD 66 => MODIFY : 20 *//* v0.0.1 */
 }
-@media screen and (min-width: 1715px) { /* For > HD screen *//* @ADD 1715 => MODIFY : 1622 */
+/* For > HD screen *//* @ADD 1715 => MODIFY : 1622 *//* v0.0.1
+@media screen and (min-width: 1715px) {
     .supporting,
     aside{
         border-left: 2px dotted white;
         border-right: 2px dotted white;
     }
-}
+}*/
 .supporting{
     position: relative;
     /background: linear-gradient(transparent, #D1D1D1 30%, transparent 98%);
     /padding-top: 290px;
     /padding-bottom: 290px;
-    background-color: rgba(0, 0, 0, .9);
-    background: linear-gradient(rgba(0, 0, 0, .6), rgb(0, 0, 0) 70%);
+    /background-color: rgba(0, 0, 0, .9); /* v0.0.1 */
+    /background: linear-gradient(rgba(0, 0, 0, .6), rgb(0, 0, 0) 70%); /* v0.0.1 */
     color: white;
     /box-shadow: 0 -5px 10px rgba(0, 0, 0, .5);
-    border-top: 2px dotted white;
+    /border-top: 2px dotted white; /* v0.0.1 */
         /display: flex; /* V1 avec flex */
         /flex-direction: row;
         /flex-wrap: wrap;
@@ -410,30 +419,83 @@ aside{
         /align-items: stretch;
 }
 .supporting div{
-    width: 30%; /* @ADD 66 => MODIFY : 20 */
-    max-width: 510px;
+    /width: 30%; /* @ADD 66 => MODIFY : 20 */
+    /max-width: 510px;
 }
 .supporting .explanation{
     float: left; /* V2 sans flex */
-}
-.supporting .participation{
-    position: absolute;
-    /margin: 0 auto;
-    left: 35%;
-}
-.supporting .benefits{
-    float: right;
-}
-.supporting .requirements{
-    clear: both;
-    float: none;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 20px;
+    padding-left: 66px; /* @ADD */
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px dotted white;
+    border-left: none;
+    margin-bottom: 80px;
+}
+.supporting .participation{
+    /position: absolute; /* v0.0.1 */
+    /margin: 0 auto; /* v0.0.1 */
+    /left: 35%; /* v0.0.1 */
+    width: 100%;
+    max-width: 500px;
+    text-align: right;
+    float: right;
+    margin: 0 auto;
+    padding: 20px;
+    padding-right: 66px; /* @ADD */
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px dotted white;
+    border-right: none;
+    margin-left: 10000px;
+    margin-bottom: 40px;
+}
+.supporting .benefits{
+    /float: right;
+    width: 100%;
+    max-width: 800px;
+    float: left; /* V2 sans flex */
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 66px; /* @ADD */
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px dotted white;
+    border-left: none;
+    margin-bottom: 80px;
+}
+.supporting .requirements{
+    /clear: both; /* v0.0.1 */
+    /float: none; /* v0.0.1 */
+    width: 100%;
+    max-width: 1000px;
+    /margin: 0 auto; /* v0.0.1 */
+    /padding-top: 100px; /* v0.0.1 */
+    text-align: right;
+    float: right;
+    margin: 0 auto;
+    padding: 20px;
+    padding-right: 66px; /* @ADD */
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px dotted white;
+    border-right: none;
+    margin-bottom: 80px;
+    margin-left: 10000px;
 }
 .supporting .benefits p::before{
     content: " " attr(assets/img/sand-465724.jpg);
+}
+aside{
+    clear: both;
+    background-color: rgba(0, 0, 0, .6);
+    /border: 2px dotted white;
+    /border-bottom: none;
+    /width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .9);
+    background: linear-gradient(transparent, rgb(0, 0, 0) 90%);
 }
 
 /*******************/
@@ -449,18 +511,18 @@ aside{
     width: 545px;
     height: 250px;
     margin: 0 auto;
-    padding: 10px;
-    /background: rgba(38,66,127, .1);
-    border: 1px dashed rgba(250, 250, 250, .5);
-    border-radius: 5px;
+    /padding: 10px;
+    /background: rgba(38,66,127, .1); /* v0.0.1 */
+    /border: 1px dashed rgba(250, 250, 250, .5); /* v0.0.1 */
+    /border-radius: 5px;
 }
 .design-selection ul li:hover { /* si on veut supprimer le gris (fonc du tiroir), mais beug */
 }
 .design-selection ul li {
     /* FOND du tiroir */
     border-radius: 5px;
-    background: #bdc7d0; /* couleur de fond  @RE CHOIX */
-    background: linear-gradient(#CCD6DC, #ADB7C1);
+    background: rgba(250,250,250,.5); /* #bdc7d0 couleur de fond  @RE CHOIX */
+    /background: linear-gradient(#CCD6DC, #ADB7C1); /* v0.0.1 */
     /* LE RESTE */
     position: relative;
     float: left;
@@ -481,7 +543,7 @@ aside{
     font-family: 'Indie Flower', cursive;
 }
 .design-selection ul li a{ /* CONTENU du tiroir */
-    color: #6F7A81; /* couleur police TIROIR */
+    /* color: #6F7A81; couleur police TIROIR */
     font-size: 25px;
     display: block;
     transform: rotate(-15deg);
@@ -503,8 +565,8 @@ aside{
     color: #FFFFFF; /* couleur de police des battonets */
     text-decoration: none;
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
-    background: #353b42;
-    background: linear-gradient(to right, #21272B, #464D55);
+    background: rgba(0, 0, 0, 1); /* #353b42 v0.0.1 */
+    /background: linear-gradient(to right, #21272B, #464D55);
     transform-origin: 0px 0px;
     transform: rotate(-90deg);
 }
@@ -533,6 +595,14 @@ aside{
 }
 .wrapper .design-archives li::before,
 .wrapper .zen-resources li::before{
+    position: relative;
+    left: -10px;
+    font-family: "FontAwesome";
+    content: "\f0a9";
+    color: #4C85FF;
+}
+.wrapper .design-archives li:hover::before,
+.wrapper .zen-resources li:hover::before{
     position: relative;
     left: -10px;
     font-family: "FontAwesome";
